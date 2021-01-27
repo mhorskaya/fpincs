@@ -9,9 +9,6 @@ namespace fpincs.Chapter07
     internal static class Solutions
     {
         // Exercise 01
-        private static Option<R> ToOption<L, R>(this Either<L, R> @this)
-            => @this.Match(_ => None, Some);
-
         public static Func<int, int, int> Remainder
             = (x, y) => x - x / y * y;
 
